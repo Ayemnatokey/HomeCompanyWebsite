@@ -1,0 +1,42 @@
+<%- include("partials/ejs/_loader") -%>
+
+<title>Homé Company Team</title>
+<link rel="stylesheet" href="styles/members.css">
+
+<%- include("partials/ejs/_banner") -%>
+	<div class="team">
+		<div class="inner">
+			<h1>Homé Company Team</h1>
+
+			<div class="members">
+				<% founders.map((x) => { %>
+       <div class="member">
+       <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+       <div class="name"><%= x.user.username %></div>
+       <div class="description admin" style="color: var(--founder);"><i style="margin-right: 4%;" class="fas fa-chess-king"></i></i> Founder</div>
+       </div>
+        <% }); %>
+
+				<% moderators.map((x) => { %>
+       <div class="member">
+       <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+       <div class="name"><%= x.user.username %></div>
+        <div class="description admin" style="color: var(--founder);"><i style="margin-right: 4%;" class="fas fa-tools"></i></i> Moderator</div>
+        </div>
+        <% }); %>
+  
+				<% members.map((x) => { %>
+        <div class="member">
+        <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+        <div class="name"><%= x.user.username %></div>
+        <div class="description admin" style="color: var(--founder);"><i style="margin-right: 4%;" class="fas fa-tools"></i></i> Members</div>
+        </div>
+        <% }); %>
+				</div>
+		</div>
+	</div>
+</section>
+
+
+<%- include("partials/ejs/_navbar") -%>
+<%- include("partials/ejs/_footer") -%>

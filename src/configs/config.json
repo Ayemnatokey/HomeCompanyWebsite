@@ -1,0 +1,20 @@
+{
+  "guildID": "",
+  "token": "",
+  "clientSecret": "",
+  "clientID": "",
+  "callbackURL": "https://home-company.xyz/callback"
+  "roles": {
+    "founderRole": "",
+    "moderatorRole": "",
+    "memberRole": "",
+  },
+  "channels": {
+    "companybasvurulog": "",
+    "siteyegirislog": "",
+  },
+  "botSettings": {
+    "game": "Homé Company Sunucusunu",
+    "status": "WATCHING"
+  }
+}

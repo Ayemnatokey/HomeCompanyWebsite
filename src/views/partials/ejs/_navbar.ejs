@@ -1,0 +1,16 @@
+<div id="navigation">
+  <ul>
+    <li><a href="/" class="<%= url === "/" ? "colored" : "" %>" onclick="toggle()">Ana Sayfa</a></li>
+    <li><a href="/#about" class="<%= url === "/about" ? "colored" : "" %>" onclick="toggle()">Hakkımızda</a></li>
+    <li><a href="/members" class="<%= url === "/members" ? "colored" : "" %>" onclick="toggle()">Ekibimiz</a></li>
+    <li><a href="/botlar" class="<%= url === "/botlar" ? "colored" : "" %>" onclick="toggle()">Botlarımız</a></li>
+    <li><a href="/company" class="<%= url === "/company" ? "colored" : "" %>" onclick="toggle()">Company</a></li>
+    <li><a href="/companybasvuru" class="<%= url === "/companybasvuru" ? "colored" : "" %>" onclick="toggle()">Companyimize başvur</a></li>
+    <li><a href="https://discord.gg/f46eEvqK39" target="_blank">Discord</a></li>
+    <% if (!user) { %>
+      <li><a href="/login" style="color: #7289da">Giriş Yap</a></li>
+    <% } else { %>
+      <li><a href="/logout" style="color: #7289da">Çıkış Yap</a></li>
+    <% } %>
+  </ul>
+</div>

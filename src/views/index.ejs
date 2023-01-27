@@ -1,0 +1,77 @@
+<%- include("partials/ejs/_loader") -%>
+
+<title>Home Company</title>
+<link rel="stylesheet" href="styles/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	
+<%- include("partials/ejs/_banner") -%>
+  <div class="swiper-container" data-aos="fade-right" data-aos-duration="1000">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide first">
+        <h2>Home Company<br><span>Kulağa nasıl geliyor?</span></h2>
+        <p>Homé Company, Kendini geliştirmek isteyen insanların akıllarına takılan <br> soruları sorabileceği, sorunlarını çözebileceği yazılım geliştiricileri için kâr amacı <br> olmayan güvenli ve destekleyici bir ortam sağlama amacıyla kurulan bir yazılım topluluğudur.</p>
+        <a href="/companybasvuru"><i class="fas fa-users" style="margin-right: 10px; font-size: 20px;"></i>Companyimize başvur!</a>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="services p-t-30" id="about">
+  <h1><span>Homé Company</span> hakkında</h1>
+  <div class="container">
+    <div class="service" data-aos="fade-left" data-aos-duration="1000">
+      <i class="fas fa-users"></i>
+      <h2>EKİP</h2>
+      <p></p>
+    </div>
+
+    <div class="service" data-aos="fade-left" data-aos-duration="1000">
+      <i class="fas fa-hand-sparkles"></i>
+      <h2>SAMİMİYET</h2>
+      <p>
+        
+      </p>
+    </div>
+    <div class="service" data-aos="fade-left" data-aos-duration="1000">
+      <i class="fas fa-code"></i>
+      <h2>DENEYİM</h2>
+      <p>
+        
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="social">
+  <h1><span style="color: var(--blurple); font-weight: 700;">Homé Company</span> Social</h1>
+  <div class="inner" data-aos="fade" data-aos-duration="1000">
+    <a href="https://github.com/homecompany0"><ion-icon name="logo-github"></ion-icon></a>
+    <a href="https://discord.gg/f46eEvqK39"><ion-icon name="logo-discord"></ion-icon></a>
+    <a href="https://twitter.com/HomCompanyOffi1"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="https://www.youtube.com/channel/UCNxdRFAGAGoubllk_oOfYpw"><ion-icon name="logo-youtube"></ion-icon></a>
+    <a href="https://www.instagram.com/homecompanyofficial"><ion-icon name="logo-instagram" style="margin: 0"></ion-icon></a>
+  </div>
+</div>
+
+<%- include("partials/ejs/_navbar") -%>
+<%- include("partials/ejs/_footer") -%>
+
+<script>
+  AOS.init();
+  
+  var swiper = new Swiper('.swiper-container', {
+    speed: 600,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+</script>

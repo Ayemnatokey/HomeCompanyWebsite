@@ -1,0 +1,34 @@
+<%- include("partials/ejs/_loader") -%>
+
+<title>Homé Company | Workwithus</title>
+<link rel="stylesheet" href="styles/workwithus.css">
+
+<%- include("partials/ejs/_banner") -%>
+  <div class="general">
+  <script>
+alert('1,000 üye altı sunucuları kabul etmiyoruz.')
+</script>
+    <h1>Company Başvuru</h1>
+  </div>
+  <div class="wrapper">
+    <form method="POST" action="/companybasvuru">
+      <div class="inputGroup">
+        <div><input type="text" placeholder="Discord Kullanıcı Adınız ve ID'niz" autocomplete="off" name="name" required/><span class="highlight"></span><span class="bar"></span></div>
+        <div><input type="email" placeholder="E-posta Adresi" autocomplete="off" name="email" required/><span class="highlight"></span><span class="bar"></span></div>
+        <div><input type="text" placeholder="Discord Üzerinde Yaptığınız İşleri Özetleyin." autocomplete="off" name="is" required/><span class="highlight"></span><span class="bar"></span></div>
+        <div><input type="text" placeholder="Sunucunuzun Adı" autocomplete="off" name="sunucuadi" required/><span class="highlight"></span><span class="bar"></span></div>
+        <div><input type="text" placeholder="Sunucunuzun ID'si" autocomplete="off" name="sunucuid" required/><span class="highlight"></span><span class="bar"></span></div>
+        <div><input type="text" placeholder="Sunucunuzun Davet Linki" autocomplete="off" name="sunuculink" required/><span class="highlight"></span><span class="bar"></span></div>
+        <div><textarea name="whyYourServer" rows="6" placeholder="Sunucunuzdan Bahsedin." minlength="10" required></textarea><span class="highlight"></span><span class="bar"></span></div><br>
+        <div><textarea name="whyHoméCompany" rows="6" placeholder="Neden Homé Company?" minlength="10" required></textarea><span class="highlight"></span><span class="bar"></span></div><br>
+        <div><textarea name="sartlar" rows="6" placeholder="Sunucunuzda Homé Company rolü ve kanalı açmayı kabul ediyor musunuz? Yeni bir sunucumuz açıldığında duyuru kanalınızda everyone etiketi ile paylaşmayı kabul ediyor musunuz?" minlength="10" required></textarea><span class="highlight"></span><span class="bar"></span></div><br>
+        <div><textarea name="eklist" rows="7" placeholder="Eklemek İstediğiniz Bir Şey Var Mı?" required></textarea><span class="highlight"></span><span class="bar"></span></div><br>
+
+      </div>
+      <button id="arda" type="submit"><i class="fas fa-check" style="margin-right: 10px; font-size: 20px;"></i>Gönder</button>
+    </form>
+  </div>
+</section>
+
+<%- include("partials/ejs/_navbar") -%>
+<%- include("partials/ejs/_footer") -%>
