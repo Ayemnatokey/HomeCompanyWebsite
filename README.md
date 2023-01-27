@@ -1,3 +1,3 @@
 # Homé Company Site
 
-Hata olursa kod sunucularına sorarak çözebilirsiniz. Yaza kadar destek vermiyorum.
+Eski Devotion sitesinin Homé Company için çevirilmiş halidir. Hata olursa kod sunucularına sorarak çözebilirsiniz. Temmuz'a kadar destek vermiyorum.
