@@ -13,7 +13,7 @@ const request = require("request");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-const settings = require("./src/configs/settings.json");
+const settings = require("./src/configs/config.json");
 const conf = require("./src/configs/config.json");
 
 client.login(conf.token).then(() => console.log("Giriş başarılı!")).catch(() => console.log("Giriş Başarısız!"));
