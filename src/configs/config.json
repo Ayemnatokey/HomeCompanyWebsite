@@ -3,15 +3,15 @@
   "token": "",
   "clientSecret": "",
   "clientID": "",
-  "callbackURL": "https://home-company.xyz/callback"
+  "callbackURL": "https://home-company.xyz/callback",
   "roles": {
     "founderRole": "",
     "moderatorRole": "",
-    "memberRole": "",
+    "memberRole": ""
   },
   "channels": {
     "companybasvurulog": "",
-    "siteyegirislog": "",
+    "siteyegirislog": ""
   },
   "botSettings": {
     "game": "Homé Company Sunucusunu",
