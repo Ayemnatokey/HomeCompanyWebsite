@@ -85,7 +85,7 @@ app.get("/company", (req, res) => {
 const fetchinvitee = async(invitecode) => {
  return await client.fetchInvite(invitecode)
 }
-  res.render("company", { partners, supporters, url: req.originalUrl, user: req.user, request: require('request'), bot: client, fetch: fetchinvitee});
+  res.render("company", {url: req.originalUrl, user: req.user, request: require('request'), bot: client, fetch: fetchinvitee});
 });
 
 app.get("/error", (req, res) => {
